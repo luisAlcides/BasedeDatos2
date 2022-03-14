@@ -95,19 +95,19 @@
     <Compile Include="frmAddUser.Designer.cs">
       <DependentUpon>frmAddUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmUpdateUser.cs">
+    <Compile Include="FrmUpdateDeleteUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmUpdateUser.Designer.cs">
-      <DependentUpon>FrmUpdateUser.cs</DependentUpon>
+    <Compile Include="FrmUpdateDeleteUser.Designer.cs">
+      <DependentUpon>FrmUpdateDeleteUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAddUser.resx">
       <DependentUpon>frmAddUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmUpdateUser.resx">
-      <DependentUpon>FrmUpdateUser.cs</DependentUpon>
+    <EmbeddedResource Include="FrmUpdateDeleteUser.resx">
+      <DependentUpon>FrmUpdateDeleteUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

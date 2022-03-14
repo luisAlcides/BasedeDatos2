@@ -9,11 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PRESENTATION {
-    public partial class FrmUpdateUser : Form {
+    public partial class FrmUpdateDeleteUser : Form {
 
         LOGIC.LogicalUpdate logicUpdate = new LOGIC.LogicalUpdate();
+        LOGIC.LogicalDelete logicDelete = new LOGIC.LogicalDelete();
 
-        public FrmUpdateUser() {
+
+        public FrmUpdateDeleteUser() {
             InitializeComponent();
         }
 
@@ -39,5 +41,25 @@ namespace PRESENTATION {
             this.txtPassword.Text = "";
             this.txtStatus.Text = "";
         }
+
+        private void btnDelete_Click(object sender, EventArgs e) {
+            int idUser = Convert.ToInt32(this.txtIdUser.Text);
+
+            string message = logicDelete.deleteUser(idUser);
+            if (message == "Usuario eliminado") {
+                MessageBox.Show("You delete the user: " + idUser);
+            } else {
+                MessageBox.Show(message);
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e) {
+
+        }
+
+        private void FrmUpdateDeleteUser_Load(object sender, EventArgs e) {
+
+        }
     }
-}
+    }
+

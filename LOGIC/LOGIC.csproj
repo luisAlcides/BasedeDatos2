@@ -84,6 +84,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LogicalDelete.cs" />
     <Compile Include="LogicalUpdate.cs" />
     <Compile Include="LogicalUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

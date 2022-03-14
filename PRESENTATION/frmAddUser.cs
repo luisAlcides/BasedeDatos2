@@ -27,7 +27,7 @@ namespace PRESENTATION {
         }
 
         private void btnShowUpdate_Click(object sender, EventArgs e) {
-            FrmUpdateUser frmupdate = new FrmUpdateUser();
+            FrmUpdateDeleteUser frmupdate = new FrmUpdateDeleteUser();
             frmupdate.Show();
             this.Hide();
         }

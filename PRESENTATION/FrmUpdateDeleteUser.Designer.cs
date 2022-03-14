@@ -1,5 +1,5 @@
 ﻿namespace PRESENTATION {
-    partial class FrmUpdateUser {
+    partial class FrmUpdateDeleteUser {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -34,88 +34,97 @@
             this.txtStatus = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnClean = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(201, 47);
+            this.label1.Font = new System.Drawing.Font("Fira Code Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(195, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 20);
+            this.label1.Size = new System.Drawing.Size(389, 35);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Update User";
+            this.label1.Text = "Update and Delete User";
             this.label1.UseMnemonic = false;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(97, 131);
+            this.label2.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(108, 136);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 20);
+            this.label2.Size = new System.Drawing.Size(54, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "idUser";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(97, 184);
+            this.label3.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(108, 189);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 20);
+            this.label3.Size = new System.Drawing.Size(41, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "User";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(97, 242);
+            this.label4.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(108, 247);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 20);
+            this.label4.Size = new System.Drawing.Size(78, 18);
             this.label4.TabIndex = 3;
             this.label4.Text = "Password";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(97, 298);
+            this.label5.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(108, 303);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 20);
+            this.label5.Size = new System.Drawing.Size(52, 18);
             this.label5.TabIndex = 4;
             this.label5.Text = "Status";
             // 
             // txtIdUser
             // 
-            this.txtIdUser.Location = new System.Drawing.Point(181, 131);
+            this.txtIdUser.Location = new System.Drawing.Point(201, 131);
             this.txtIdUser.Name = "txtIdUser";
-            this.txtIdUser.Size = new System.Drawing.Size(120, 26);
+            this.txtIdUser.Size = new System.Drawing.Size(133, 27);
             this.txtIdUser.TabIndex = 5;
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(181, 178);
+            this.txtUser.Location = new System.Drawing.Point(201, 178);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(277, 26);
+            this.txtUser.Size = new System.Drawing.Size(307, 27);
             this.txtUser.TabIndex = 6;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(181, 236);
+            this.txtPassword.Location = new System.Drawing.Point(201, 236);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(277, 26);
+            this.txtPassword.Size = new System.Drawing.Size(307, 27);
             this.txtPassword.TabIndex = 7;
             // 
             // txtStatus
             // 
-            this.txtStatus.Location = new System.Drawing.Point(181, 298);
+            this.txtStatus.Location = new System.Drawing.Point(201, 298);
             this.txtStatus.Name = "txtStatus";
-            this.txtStatus.Size = new System.Drawing.Size(277, 26);
+            this.txtStatus.Size = new System.Drawing.Size(307, 27);
             this.txtStatus.TabIndex = 8;
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(168, 364);
+            this.btnUpdate.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(80, 369);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(107, 30);
+            this.btnUpdate.Size = new System.Drawing.Size(215, 42);
             this.btnUpdate.TabIndex = 9;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -123,19 +132,43 @@
             // 
             // btnClean
             // 
-            this.btnClean.Location = new System.Drawing.Point(302, 364);
+            this.btnClean.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClean.Location = new System.Drawing.Point(522, 369);
             this.btnClean.Name = "btnClean";
-            this.btnClean.Size = new System.Drawing.Size(107, 30);
+            this.btnClean.Size = new System.Drawing.Size(215, 42);
             this.btnClean.TabIndex = 10;
             this.btnClean.Text = "Clean";
             this.btnClean.UseVisualStyleBackColor = true;
             this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
             // 
-            // FrmUpdateUser
+            // btnDelete
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.btnDelete.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(301, 369);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(215, 42);
+            this.btnDelete.TabIndex = 11;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Fira Code", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(113, 94);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(589, 20);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "If you want to delete a user please only introduce your id";
+            // 
+            // FrmUpdateDeleteUser
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(598, 450);
+            this.ClientSize = new System.Drawing.Size(760, 450);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnClean);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtStatus);
@@ -147,8 +180,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "FrmUpdateUser";
+            this.Font = new System.Drawing.Font("Fira Code", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "FrmUpdateDeleteUser";
             this.Text = "FrmUpdateUser";
+            this.Load += new System.EventHandler(this.FrmUpdateDeleteUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,5 +202,7 @@
         private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnClean;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Label label6;
     }
 }
